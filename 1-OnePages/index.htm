@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="one pages">
+    <meta name="keywords" content="html,css,jquery,js">
+    <meta name="author" content="Halef Yurtkuran">
+    <title>OnePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> bu kod css dosyası indirilerek kullanıldı. aşağıdaki cdn kodunu kullanarak daha basit şekilde kullanılabilir -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--cdn kodu-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a933e9ceb6.js" crossorigin="anonymous"></script>  <!-- font-awesome kodu -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="one_pages_main.js"></script>
+</head> 
+<body>
+    <div id="top"></div>
+    <header>
+
+        <nav>
+
+            <div class="container">
+                <div id="logo">
+                    <a href="" class="btk-akademi">
+                        <img id="logo-image" src="image/logo.jpg">
+                        <!-- BTK Akademi -->
+                    </a>
+                </div>
+            
+                <div id="menu">
+                    <ul  class="uppercase">
+                        <li class="menu-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="menu-item"><a href="#division-3-career"><i class="fa-solid fa-user"></i>Career</a></li>
+                        <li class="menu-item"><a href="#division-1-main"><i class="fa-solid fa-newspaper"></i>New</a></li>
+                        <li class="menu-item"><a href="#aaa"><i class="fa-solid fa-newspaper"></i>S.S.S</a></li>
+                        <li class="menu-item"><a href="#about-me"><i class="fa-solid fa-id-card"></i>About Me</a></li>
+                        <li class="menu-item"><a href="#form-email"><i class="fa-solid fa-id-card"></i>Contact</a></li>
+                        <li class="menu-item"><button id="dialogbutton"><i class="fa-solid fa-user"></i></button></a></li>
+                        <li class="menu-item"><input type="text" id="tags" style="height: 25px;"> <i class="fa-solid fa-magnifying-glass"></i></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div id="dialog">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-Mail Adresiniz"><br>
+                        <small class="text-danger">E-mail Girmediniz!</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="sifre" class="form-control" placeholder="Şifreniz"><br>
+                        <small class="text-danger">Şifrenizi Girmediniz!</small>
+                    </div>
+                    <button style="color: green; background-color: aqua; border-width: 3px; width: 100px; height: 30px;" type="submit">Gönder</button>
+            </div>
+
+            <div id="bar-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+
+        
+
+
+        <div class="image-header"></div>
+        <div class="theme-header">
+            <h1>BTK AKADEMİ ONE PAGE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, officia!</p>
+            <a href="#" class="btn-header">Daha Fazla...</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- emmet:  main>(section#division-1-main>div.piece>h2{lorem}+p{lorem2})+(section#division-2-list>ul>(li>div.ara>img+div.area-div>h3{lorem}+p{lorem4})*4) -->
+        <!-- section 1 -->
+        <section id="division-1-main">
+            <div class="piece">
+                <h2>Ana Başlık Alanı</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid iusto quis labore voluptatem consequatur illo facilis nam temporibus, dolorum maxime amet recusandae mollitia in sunt doloremque inventore. Fuga, tempora non?</p>
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section id="division-2-list">
+            <ul>
+                <li>
+                    <div class="area">
+                        <img src="image/b1.jpeg" alt="">
+                        <div class="area-div">
+                            <h3>lorem</h3>
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quam.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/b1.jpeg" alt="">
+                        <div class="area-div">
+                            <h3>lorem</h3>
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ad?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/b1.jpeg" alt="">
+                        <div class="area-div">
+                            <h3>lorem</h3>
+                            <p class="line-clamp-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, magnam?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/b1.jpeg" alt="">
+                        <div class="area-div">
+                            <h3>lorem</h3>
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illo?</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section-3 -->
+     <section id="division-3-career" class="clearfix">
+        <div id="left-main"><img src="" alt=""></div>
+        <div id="right-main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti deleniti ratione rem facilis? Quasi sed in consectetur ad obcaecati ratione doloremque ipsa dignissimos? Deserunt itaque sed nulla hic tempore?</p>
+            <ul>
+                <li>teknoloji 1</li>
+                <li>teknoloji 2</li>
+                <li>teknoloji 3</li>
+                <li>teknoloji 4</li>
+            </ul>
+        </div>
+     </section>
+
+     <h3 id="about-me">Hakkımızda</h3>
+     <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">About</a></li>
+            <li><a href="#tabs-2">Vision</a></li>
+            <li><a href="#tabs-3">Mission</a></li>
+        </ul>
+
+        <div id="tabs-1">
+            <p>Hakkımızda Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quas?</p>
+        </div>
+        <div id="tabs-2">
+            <p>Vizyonumuz Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem?</p>
+        </div>
+        <div id="tabs-3">
+            <p>Misyonumuz Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, neque.</p>
+        </div>
+
+     </div>
+
+     <section id="division-contact" class="clearfix">
+        <div class="piece">
+            <h2 style="color:white; text-transform: uppercase; padding-top: 10rem;">Hakkımızda</h2>
+            <p style="color: white; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi nisi cupiditate. Impedit vero, nulla aperiam natus iusto magnam eos voluptate saepe architecto recusandae maiores itaque labore totam! Doloremque reprehenderit dolorum itaque, eaque culpa repudiandae porro voluptas voluptate consectetur quas eveniet est quam voluptatum placeat vitae odit. Illum delectus neque dolores magni, sint cumque dolore harum nemo? Iusto iure quas praesentium distinctio repudiandae amet nisi sed aliquam, laudantium, deserunt omnis pariatur. Enim soluta impedit eligendi laboriosam doloremque dolores, necessitatibus magni a voluptates reprehenderit animi eveniet dolor qui fuga ad ipsa assumenda atque explicabo nam? Rem cupiditate necessitatibus animi nulla accusantium.</p>
+        </div>
+     </section>
+
+     <!-- S.S.S Start -->
+      <section id="aaa">
+      <div>Sıkça Sorulan Sorular</div><br>
+     <div id="accordion">
+        <h3>Soru 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Soru 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Soru 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+    </section>
+      <!-- S.S.S FİNİSH -->
+
+
+     <!-- FORM İNPUT -->
+     <section id="form-email">
+
+        <h1>İLETİŞİM</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, facere maxime! Molestiae facilis fuga amet, magnam quia ea aliquam quisquam.</p>
+
+        <div class="col100 clearfix" style="margin-bottom: 5rem;">
+            <h3 style="color: aqua; text-align: center;">MAPS</h3>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=istanbul,beylikd%C3%BCz%C3%BC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:452px;width:100%; border: 1px solid red;;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+            <!-- <div class="mapouter" style="margin-left: 5%; margin-top: 2%;"><div class="gmap_canvas"><iframe width="700" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=%C4%B0stanbul,beylikd%C3%BCz%C3%BC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:452px;width:701px; border: 1px solid red;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> -->
+        </div>
+
+        <div class="col100 clearfix" style="margin-bottom: 5rem;">
+            <h3 style="color: aqua; text-align: center;">E-Mail</h3>
+            <form action="" method="post">
+                <div class="form-group-all">
+                    
+                    <div class="form-group">
+                        <label for="fullname"></label><br/>
+                        <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Lütfen Adınızı Giriniz" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email"></label><br/>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="E-posta adesinizi giriniz" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message"></label><br/>
+                        <textarea class="form-control" name="" id="message" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+                    </div>
+                    
+                    <input class="btn" type="reset" value="Temizle">
+                    <input class="btn" type="submit" value="Gönder">
+    
+                </div>
+                
+            </form>
+        </div>
+
+        
+      </section>
+
+      <!-- TOP TUŞU -->
+     <div id="bottom">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+     </div>
+
+    </main>
+
+    
+
+     
+
+     <!-- FOOTER -->
+     <footer class="clearfix" style="background-color: #000">
+        <div id="division-footer" style="color: gold;">
+            <a href="#" style="text-decoration: none; color: gold;">BTK Akademi</a>
+            <p>Bütün Hakları Saklıdır.&copy;</p>
+
+            <address>
+                <p style="color: white;">
+                    <a style="color: white;" href="mailto:yurtkuranhalef40@gmail.com">yurtkuranhalef40@gmail.com</a><br>
+                    <a style="color: white;" href="tel:+90 531 662 85 32">+90 531 662 8532</a>
+                </p>
+            </address>
+
+        </div>
+     </footer>
+
+</body>
+</html>

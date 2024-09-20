@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="id">İsim</label>
+                <input type="text" id="post_isim" name="post_isim" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">not1</label>
+                <input type="text" id="post_not1" name="post_not1" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">not2</label>
+                <input type="text" id="post_not2" name="post_not2" class="form-control">
+            </div>
+        </form>
+        <button class="btn btn-success" id="ajaxget">Gönder</button>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>İsim</th>
+                    <th>Ortalama</th>
+                </tr>
+            </thead>
+            <tbody id="musteri">
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script>
+        $(function(){
+            $("#ajaxget").click(function(){
+                var baseurl="http://localhost:3000";
+                var tbody=$("#musteri");
+                // Get the values from the form fields
+                var isim = $("#post_isim").val();
+                var not1 = parseInt($("#post_not1").val());
+                var not2 = parseInt($("#post_not2").val());
+                var ortalama = (not1 + not2) / 2;
+
+    
+                // Create a new row with the form data
+                var newRow = "<tr><td>" + isim + "</td><td>" + ortalama + "</td><td>";
+    
+                // Append the new row to the table body
+                tbody.append(newRow);
+            })
+        })
+    </script>
+    
+
+  </body>
+</html>
